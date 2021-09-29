@@ -22,8 +22,7 @@ export class ContaCorrente {
 
   // Método transferir
   transferir(valor, conta){
-    let valorTransferir = 0
-    valorTransferir = this.sacar(valor)
+    let valorTransferir = this.sacar(valor) //! Essa linha está deixando a variável valorTransferir como undefined
     conta.depositar(valorTransferir)
   }
 
